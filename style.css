@@ -191,3 +191,11 @@ button {
 .links:active {
   color: #90F28D;
 }
+.links a {
+  color: #11480B;
+  text-decoration: none;
+}
+.links a:hover,
+.links a:active {
+  color: #90F28D;
+}

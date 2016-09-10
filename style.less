@@ -221,6 +221,12 @@ form {
     color: @main-color;
     padding-right: 3em;
     &:hover, &:active {color:@hover-color;}  
+
+    a {
+        color: @main-color;
+        text-decoration: none;
+        &:hover, &:active {color:@hover-color;}
+    }
 }
 
 .border(@background-color) when (@background-color = white) {
