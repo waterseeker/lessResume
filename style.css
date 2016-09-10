@@ -67,6 +67,8 @@ hr {
   column-gap: 80px;
   padding-left: 12em;
   padding-right: 12em;
+  display: none;
+  margin-left: 0em;
 }
 .technical p {
   display: inline-block;
@@ -102,7 +104,7 @@ hr {
   text-align: center;
   color: #11480B;
 }
-.footer .footer ul li {
+.footer ul li {
   list-style: none;
   display: inline;
   margin-left: 30px;
