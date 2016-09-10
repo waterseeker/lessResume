@@ -34,6 +34,12 @@
     }
 }
 
+.border-radius(@radius: 5px) {
+    -webkit-border-radius: @radius;
+        -moz-border-radius: @radius;
+            border-radius: @radius;
+}
+
 .push {
     margin-bottom: 30px;
 }
@@ -140,7 +146,7 @@ form {
     width: 35%;
     height: 350px;
     padding: 1em;
-    border-radius: 1em;
+    .border-radius;
     background: @main-color; 
     text-align: center;
 }
@@ -163,7 +169,7 @@ form {
     width: 200px;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    border-radius: 5px; 
+    .border-radius; 
     height: 2em;
     border: 1px solid grey;
     }
@@ -192,7 +198,7 @@ form {
     background-color: white;
     padding: 0;
     border: 1px solid grey;
-    border-radius: 5px;
+    .border-radius;
     font-size: 100%;
     }
 
@@ -216,5 +222,16 @@ form {
     text-decoration: none;
     color: @main-color;
     padding-right: 3em;
-    
 }
+
+.border(@background-color) when (@background-color = white) {
+    border: 1px solid grey;
+    }
+
+.border(@text-@background-color) when not (@background-color-color = white) {
+    border: 1px solid grey;
+    }
+.border(@@background-color-color) {
+    border: 1px solid #f3f3f3;
+    }
+    
