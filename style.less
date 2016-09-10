@@ -1,5 +1,5 @@
 @main-color: #11480B;
-
+@hover-color: #90F28D;
 .header {
     background-color: @main-color;
     list-style: none;
@@ -25,11 +25,9 @@
             text-decoration: none;
             color: white;
             background-color: @main-color;
-
-                a:hover {
-                color: darkblue;
-                }
+            &:hover, &:active {color:@hover-color;}
             }
+            
         }
     }
 }
@@ -222,6 +220,7 @@ form {
     text-decoration: none;
     color: @main-color;
     padding-right: 3em;
+    &:hover, &:active {color:@hover-color;}  
 }
 
 .border(@background-color) when (@background-color = white) {
@@ -231,7 +230,6 @@ form {
 .border(@text-@background-color) when not (@background-color-color = white) {
     border: 1px solid grey;
     }
-.border(@@background-color-color) {
+.border(@background-color-color) {
     border: 1px solid #f3f3f3;
     }
-    

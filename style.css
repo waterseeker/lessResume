@@ -24,8 +24,9 @@
   color: white;
   background-color: #11480B;
 }
-.header ul li a a:hover {
-  color: darkblue;
+.header ul li a:hover,
+.header ul li a:active {
+  color: #90F28D;
 }
 .push {
   margin-bottom: 30px;
@@ -185,4 +186,8 @@ button {
   text-decoration: none;
   color: #11480B;
   padding-right: 3em;
+}
+.links:hover,
+.links:active {
+  color: #90F28D;
 }
