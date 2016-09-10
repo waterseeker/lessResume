@@ -187,10 +187,6 @@ button {
   color: #11480B;
   padding-right: 3em;
 }
-.links:hover,
-.links:active {
-  color: #90F28D;
-}
 .links a {
   color: #11480B;
   text-decoration: none;
