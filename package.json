@@ -1,0 +1,17 @@
+{
+  "name": "ParseBlog",
+  "version": "0.0.1",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "nodemon -e js,less --exec \"source server/.variables && lessc client/css/styles.less client/css/styles.css && node server/server.js\"",
+    "start": "node server/server.js"
+  },
+  "author": "Platypi",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "latest",
+    "express": "^4.14.0",
+    "sendgrid": "^4.7.1",
+    "stripe": "^4.14.0"
+  }
+}
